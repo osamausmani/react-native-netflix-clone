@@ -19,6 +19,7 @@ const userDataArr = [
   {id: 2, name: 'User A', userImage: require('../assets/user2.png')},
   {id: 3, name: 'User C', userImage: require('../assets/user3.png')},
   {id: 4, name: 'User D', userImage: require('../assets/user4.png')},
+  {id: 5, name: 'User E', userImage: require('../assets/user4.png')},
 ];
 
 let nav;
