@@ -30,11 +30,17 @@ const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.viewsContainer}>
-        {bottomNavIndex == 0 ? <HomeFragment /> : null}
-        {bottomNavIndex == 1 ? <SearchFragment /> : null}
-        {bottomNavIndex == 2 ? <ComingSoonFragment /> : null}
-        {bottomNavIndex == 3 ? <DownloadsFragment /> : null}
-        {bottomNavIndex == 4 ? <MoreFragment /> : null}
+        {bottomNavIndex == 0 ? <HomeFragment navigation={navigation} /> : null}
+        {bottomNavIndex == 1 ? (
+          <SearchFragment navigation={navigation} />
+        ) : null}
+        {bottomNavIndex == 2 ? (
+          <ComingSoonFragment navigation={navigation} />
+        ) : null}
+        {bottomNavIndex == 3 ? (
+          <DownloadsFragment navigation={navigation} />
+        ) : null}
+        {bottomNavIndex == 4 ? <MoreFragment navigation={navigation} /> : null}
       </View>
 
       <View style={styles.bottomNavBarContainer}>

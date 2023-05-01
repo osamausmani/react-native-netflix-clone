@@ -14,7 +14,7 @@ const ComingSoonFragment = ({navigation}) => {
   nav = navigation;
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <Text>ComingSoonFragment</Text>
+      <Text st>ComingSoonFragment</Text>
     </SafeAreaView>
   );
 };
